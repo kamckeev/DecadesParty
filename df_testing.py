@@ -1,4 +1,4 @@
-TIMESTAMP: 10:52AM-11:00AM
+TIMESTAMP: 30min on 1-15-2020
 import pandas as pd
 import numpy as np
 df=pd.read_csv('donner_party1.csv')
@@ -17,9 +17,20 @@ donner_df=
 
 #good to see the headers. I think its 'Survived', 'sex', 'name', 'age', 'marriage status'
 PartyMembers=len(df)
-#it should be around 86
+#it should be 86
 
-TIMESTAMP: 11:05AM to 11:17AM
 #Determine amount of survivors, percentage of males/females survived
+Alive=donner_df[['Survived']].sum()
+##should be 48
 
-Survive=donner_df[['Survived']].sum()
+TIMESTAMP: 8:42am to 8:50am on 1-16-2020
+Survived=Alive/PartyMembers
+Deceased=(PartyMembers-Alive)/PartyMembers
+
+#What are the details on the the deceased? Means of death? Consumed?
+#Want to categorize by sex, age of those represnted on the party
+#Narrative for the story of the donner party
+##Timeline of deaths
+##Timeline of rescue
+###They definently ate at least one party member. They also killed to American Indians for their flesh.
+####Gross
