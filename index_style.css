@@ -1,9 +1,15 @@
 .jumbotron {
     margin-top: 20px;
-    background-image: url("./images/test.jpg")!important;
+    background-image: url("./images/matheus-frade-u2ZhOJhJ3zE-unsplash.jpg")!important;
     background-size: cover;
 }
 
 .title {
-    color: green;
+    color:#eee;
+}
+
+.sub{
+    color:rgb(250, 253, 253);
+    text-shadow: 2px 2px rgb(15, 21, 83);
+    text-align: center;
 }
