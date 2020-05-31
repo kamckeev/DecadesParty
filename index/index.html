@@ -4,44 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="index_style.css">
+    <link rel="stylesheet" href="../style_sheets/index_style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>DecadesParty</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>Party Time</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="jumbotron">
-          <h1 class= "title">Parties through History</h1>
-          <p class= "sub"><em>Explore party trends of the past century through food, drink, culture, and costume</em></p>
+    <div class="container mt-3">
+
+        <h1 class= "title">Parties through History</h1>
+        <p class= "sub"><em>Explore party trends of the past century through food, drink, culture, and costume</em></p>
+      
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+      
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../images/beautiful-old-porcelain-1458314.jpg" alt="Tea Party">
+          </div>
+          <div class="carousel-item">
+            <img src="../images/red-explosion-1375826.jpg" alt="Celebration Party">
+          </div>
+          <div class="carousel-item">
+            <img src="../images/silhouette-3-1175065.jpg" alt="Donner Party">
+          </div>
         </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      
     </div>
-    
+
     <div class= "container">
         <p>This is work in progress, learning Bootstrap.</p>
         <p>The "years" will become buttons for interaction to other pages detailing cultural trends of that era. Not many data sets have
             yet been found regarding social parties, so data analysis will be shown under the "other" button, which will end up detailing statistics on 
             things like "the Donner Party", "Political Parties", and more parties as I come across them!</p>
     </div>
-    
-    <div class="dropdown">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-          Dropdown button
-        </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="webpages/twenty_teens.html">2010s</a>
-          <a class="dropdown-item" href="webpages/two_thousands.html"></a>2000s</a>
-          <a class="dropdown-item" href="webpages/nineteen_ninties.html">1990s</a>
-        </div>
-    </div>
+
 
     <div class="container">
     <div class="row">
-        <div class="col-sm-3">
-            <div class="row">
-                <a href="webpages/twenty_teens.html" class="btn btn-primary" role="button">2010s</a>
-                <p>Our most recent decade</p>                
-            </div>
-        </div>
         <div class="col-sm-3">
             <div class="row">
                 <a href="webpages/two_thousands.html" class="btn btn-primary" role="button">2000s</a>

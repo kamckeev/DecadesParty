@@ -1,15 +1,29 @@
 .jumbotron {
     margin-top: 20px;
-    background-image: url("./images/matheus-frade-u2ZhOJhJ3zE-unsplash.jpg")!important;
+    background-image: url("../images/matheus-frade-u2ZhOJhJ3zE-unsplash.jpg")!important;
     background-size: cover;
 }
 
 .title {
-    color:#eee;
+    color:rgb(122, 68, 68);
 }
 
 .sub{
-    color:rgb(250, 253, 253);
-    text-shadow: 2px 2px rgb(15, 21, 83);
+    color:rgb(162, 255, 255);
+    text-shadow: 1px 1px rgb(76, 87, 209);
     text-align: center;
 }
+
+.carousel .carousel-inner{
+    height:400px
+    }
+    .carousel-inner .carousel-item img{
+    min-height:200px;
+    object-fit:cover
+    }
+    
+    @media(max-width:768px){
+    .carousel .carousel-inner{
+        height:auto
+     }
+    }
